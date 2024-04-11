@@ -1,0 +1,887 @@
+<!-- <script type="text/javascript" src="/asc/js/bootstrap.js"></script> -->
+<link rel="stylesheet" href="/asc/css/main.css" media="screen" type="text/css"></link>
+<link href="/asc/css/base.css?2" rel="stylesheet" type="text/css" media="screen" />
+
+
+<table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+    <tr valign="middle">
+        <td align="center">
+            <div id="header">
+                <table cellspacing="0" cellpadding="0" border="0" align="left" width=100% class=headertop>
+                    <tbody>
+                        <tr>
+                            <td class="top">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td class="middle">
+                                <div class="logo"><img src="/asc/images/header/iitb_logo.gif" alt="IIT Bombay Logo" /></div>
+                            </td>
+                        </tr>
+
+
+
+                        <tr class=info>
+                            <td>
+                                <div align=left>
+                                    23B3024
+                                </div>
+                            </td>
+                            <td>
+                                <div align=right>
+
+                                    <font size=3>
+                                        <a class=headera href="/asc/Home">Home</a>
+                                    </font>
+                                    &nbsp;
+                                    <font size=3>
+                                        <a class=headera href="/asc/Home?logout">Logout</a>
+                                    </font>
+
+                                    &nbsp;
+                                    <font size=3>
+                                        <a class=headera href="https://www.iitb.ac.in" target="blank">IITB Website</a>
+                                    </font>
+                                    <!-- 			&nbsp; -->
+                                    <!-- 			<font size=3> -->
+                                    <!-- 			<a class=headera href="AdminNotices.jsp">Admission Notification<sup><font color=red>New</font></sup></a> -->
+                                    <!-- 			</font> -->
+                                    &nbsp;
+                                    <!-- 			<font size=3> -->
+                                    <!-- 			<a class=headera href="Home?C">Contact Us</a> &nbsp; &nbsp; -->
+                                    <!-- 			</font>			 -->
+
+                                </div>
+                            </td>
+                        </tr>
+
+
+
+                </table>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/asc/jq/media/css/jquery-ui.css">
+<script type="text/javascript" src="/admissions/js/jquery-1.7.min.js"></script>
+<script src="/asc/jq/media/js/jquery-ui.js"></script>
+<script>
+    $(function() {
+        $("#tabs").tabs();
+    });
+
+    function execute(op) {
+        document.forms[0].flag.value = op;
+        document.forms[0].method = "POST";
+        document.forms[0].submit();
+        return true;
+    }
+
+    function toggle(v) {
+        if (document.getElementById("alum").style.display == "none") {
+            document.getElementById("alum").style.display = "block";
+        } else {
+            document.getElementById("alum").style.display = "none";
+        }
+    }
+</script>
+
+
+<!-- 
+[] current_misc_info
+-------------------------------------------
+Quick links
+-------------------------------------------
+semesterwise academic performance summary
+-------------------------------------------
+Backlogs
+-------------------------------------------
+per semester details
+-------------------------------------------
+Fees details
+-------------------------------------------
+Personal info
+-------------------------------------------
+-->
+
+
+
+
+
+
+
+
+
+
+<html>
+<style>
+    td {
+        font-family: Calibri;
+    }
+
+    body {
+        font-family: Calibri;
+    }
+
+    a {
+        font-family: Calibri;
+    }
+
+    li {
+        line-height: 1.5;
+    }
+
+    #SGrade {
+        cursor: pointer;
+    }
+
+    ul.ins li {
+        /*  line-height: 1.5;  */
+        padding-bottom: 8px;
+        list-style: decimal;
+        font-size: 12px;
+        font-family: Calibri;
+        margin-bottom: 1px;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="/asc/JSP/studentinfo/stylesheet/2c-hd-ft-fixed-layout.css" />
+<link rel="stylesheet" type="text/css" href="/asc/JSP/studentinfo/stylesheet/2c-hd-ft-fixed-presentation.css" />
+
+
+
+
+
+
+<table width=100% class=ss>
+    <tr>
+        <!-- td width=90> <img width="90" src="http://asc.iitb.ac.in/security/SecurityInterface/Staff/DisplayPhoto.jsp?code=23B3024" /> </td-->
+        <td>
+            <table width=100% class=ss>
+                <tr>
+                    <th>Roll no</th>
+                    <td>23B3024</td>
+                    <th>Name </th>
+                    <td>Himanshu Yadav</td>
+                </tr>
+                <tr>
+                    <th>Department</th>
+                    <td>Economics</td>
+                    <th>Program</th>
+                    <td>
+                        Four Year B.S.
+
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+
+
+
+
+
+
+<div id="tabs">
+    <ul>
+
+
+        <li><a href="#tabs-0">Performance Summary</a></li>
+        <li><a href="#tabs-2">Payment</a></li>
+        <li><a href="#tabs-100">New Entrants</a></li>
+
+
+
+
+        <li><a href="#tabs-4">Graduation Requirements</a></li>
+
+        <li><a href="#tabs-3">Personal Information</a></li>
+        <li><a href="#tabs-1">Forms/Requests</a></li>
+
+    </ul>
+
+
+
+    <div id=tabs-100>
+
+    </div>
+
+    <div id=tabs-3>
+
+        <a name="personalInfo">
+            <h2>Personal Info</h2>
+        </a>
+
+
+        <table width=100% class=ss>
+            <tr>
+                <th>Name</th>
+                <td>Himanshu Yadav</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>23B3024@iitb.ac.in</td>
+            </tr>
+            <tr>
+                <th>Current Address</th>
+                <td>RAMCHANDRAPURA, , TEH- NIMRANA, ALWAR RAJASTHAN Neemrana RAJASTHAN 301704
+                </td>
+            </tr>
+            <tr>
+                <th>Permanent Address</th>
+                <td>RAMCHANDRAPURA, , TEH- NIMRANA, ALWAR RAJASTHAN Neemrana RAJASTHAN 301704
+                </td>
+            </tr>
+            <tr>
+                <th>Mobile</th>
+                <td>8397077128</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>2005-09-23</td>
+            </tr>
+            <tr>
+                <th>Vaccination Status</th>
+                <td>Vaccinated</td>
+            </tr>
+            <tr>
+                <th>Hostel/Room</th>
+                <td>H16/A0810</td>
+            </tr>
+            <tr>
+                <th>Nationality</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td>M</td>
+            </tr>
+            <tr>
+                <th>Joining Date</th>
+                <td>2023-07-27</td>
+            </tr>
+            <tr>
+                <th>Admission Category</th>
+                <td>Indian</td>
+            </tr>
+        </table>
+
+
+
+    </div>
+
+
+    <div id=tabs-4>
+        <style>
+            grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                grid-auto-rows: 60px;
+                grid-gap: 10px;
+            }
+
+            [tallX] {
+                grid-row: span 2;
+                background-color: #1ba1e2;
+            }
+
+            [tallY] {
+                grid-row: span 2;
+                background-color: #00aba9;
+            }
+
+            grid-item {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1em;
+                font-weight: bold;
+                color: white;
+            }
+
+            grid-item .aX {
+                font-family: Arial;
+                font-size: 1em;
+                font-weight: bold;
+                color: white;
+                text-decoration: none;
+            }
+
+            .tooltip {
+                position: relative;
+                display: inline-block;
+                /*border-bottom: 1px dotted black;*/
+            }
+
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 200px;
+                background-color: black;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px 0;
+                /* Position the tooltip */
+                position: absolute;
+                z-index: 1;
+            }
+
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+            }
+        </style>
+        <br/><br/>
+
+        <grid-container>
+            <grid-item tallX>
+                <div class="tooltip"><a class="aX" href="/asc/JSP/studentinfo/checkCurriculumForStudent.jsp">Check Curriculum</a>
+                    <span class="tooltiptext">Check your registered courses against curriculum</span>
+                </div>
+            </grid-item>
+
+            <grid-item tallY>
+
+                <div class="tooltip"><a class="aX" href="/asc/TagC">Check Tags</a>
+                    <span class="tooltiptext">Course tags should be frozen for graduation checking</span>
+                </div>
+
+            </grid-item>
+            <grid-item tallX>
+
+                <div class="tooltip">Convocation Form
+                    <span class="tooltiptext">Convocation form can be filled only after course tags are frozen and convocation fee is paid.</span>
+                </div>
+
+            </grid-item>
+            <grid-item tallY>
+
+                <div class="tooltip">Graduation Status
+                    <span class="tooltiptext">Graduation checking will start only after course tags are frozen</span>
+                </div>
+
+            </grid-item>
+            <grid-item tallX>
+
+                <div class="tooltip">Provisional<br/>Certificate
+                    <span class="tooltiptext">You can apply for provisional certificate only after 'Graduation Status' is approved</span>
+                </div>
+
+            </grid-item>
+
+        </grid-container>
+        <br/><br/>
+
+
+        <br/><br/>
+    </div>
+
+
+    <div id="tabs-0">
+
+
+
+        <!-- <li><a href="http://portal.iitb.ac.in/asc/JSP/preCourseReg/regCriteria.jsp">Pre-Registration Eligibility Criteria </a></li> -->
+        <!-- requires initialised variable rollno -->
+
+        <!-- <font color=red> -->
+        <!-- In case of Project Courses (Stage I and II) : CPI for the course credits and the project credits will be separately calculated and will be shown in the semester grade card, along with the course CPI, Project CPI -->
+        <!-- and overall CPI [Ref : 194th Senate Meeting].   -->
+        <!-- <br> -->
+        <!-- For further clarification please refer rule book at : http://www.iitb.ac.in/newacadhome/rules.jsp  -->
+        <!-- <br></font> -->
+        <a name="performanceSummary">
+            <h2>Academic Performance Summary</h2>
+        </a>
+        <table width=100% class=ss>
+            <tr>
+                <th>Year</th>
+                <th>Sem</th>
+                <th>SPI</th>
+                <th>CPI</th>
+                <th>Sem Credits <br/> Used for SPI</th>
+                <th>Completed Semester Credits </th>
+                <th>Cumulative Credits <br/> Used for CPI</th>
+                <th>Completed Cumulative Credits</th>
+            </tr>
+
+            <tr>
+                <td>2023</td>
+                <td>Autumn</td>
+                <td>6.94</td>
+                <td>6.94</td>
+                <td>33.0</td>
+
+                <td>33.0</td>
+                <td>33.0</td>
+                <td>33.0</td>
+            </tr>
+
+        </table>
+
+        <!-- requires initialised variable rollno -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <a name=semDetails>
+            <h2>Semester-wise Details</h2>
+        </a>
+        <br/>
+        <font color=red>*This registration is subject to approval(s) from faculty advisor/Course Instructor/Academic office.</font>
+        <table width=100% class=ss>
+
+            <h3>Year/Semester: 2023-24/Spring </h3>
+
+            <table width=100% class=ss>
+                <tr>
+                    <td align=center colspan=6>
+
+                        <a href='/asc/JSP/studentinfo/DisplayCourses.jsp?toshowgrade=true&acadyear=2023&acadsem=2' style='color:red'>
+                            <font size=+1>Please fill course feedback</font>
+                        </a>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>Course Code</th>
+                    <th width=60%>Course Name</th>
+                    <th>Credits</th>
+                    <th>Tag</th>
+                    <th>Grade</th>
+                    <th>Credit/Audit</th>
+                </tr>
+
+                <tr style="">
+                    <td>CH 117 (P14)
+                    </td>
+                    <td>Chemistry Lab
+
+                    </td>
+                    <td>3.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        Not allotted
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+                <tr style="">
+                    <td>EC 101 (D3)
+                    </td>
+                    <td>Economics
+
+                    </td>
+                    <td>6.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        Not allotted
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+                <tr style="">
+                    <td>MA 110 (D3)
+                    </td>
+                    <td>Linear Algebra and Differential Equations
+
+                    </td>
+                    <td>8.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        Not allotted
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+                <tr style="">
+                    <td>MS 101 (P14)
+                    </td>
+                    <td>Makerspace
+
+                    </td>
+                    <td>8.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        Not allotted
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+                <tr style="">
+                    <td>NOCS02
+
+                    </td>
+                    <td>NCC/NSS/NSO
+
+                    </td>
+                    <td>0.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        Not allotted
+
+                    </td>
+                    <td>N</td>
+                </tr>
+
+                <tr style="">
+                    <td>PH 110 (D3)
+                    </td>
+                    <td>Introduction to Classical and Quantum Physics
+
+                    </td>
+                    <td>8.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        Not allotted
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+            </table>
+
+            <h3>Year/Semester: 2023-24/Autumn </h3>
+
+            <table width=100% class=ss>
+                <tr>
+                    <td align=center colspan=6>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>Course Code</th>
+                    <th width=60%>Course Name</th>
+                    <th>Credits</th>
+                    <th>Tag</th>
+                    <th>Grade</th>
+                    <th>Credit/Audit</th>
+                </tr>
+
+                <tr style="">
+                    <td>CH 111 (D3)
+                    </td>
+                    <td>Chemistry
+
+                    </td>
+                    <td>8.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        BC
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+                <tr style="">
+                    <td>CS 101 (D3)
+                    </td>
+                    <td>Computer Programming and Utilization
+
+                    </td>
+                    <td>6.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        CD
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+                <tr style="">
+                    <td>GC 101
+
+                    </td>
+                    <td>Gender in the workplace
+
+                    </td>
+                    <td>0.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        PP
+
+                    </td>
+                    <td>N</td>
+                </tr>
+
+                <tr style="">
+                    <td>HS 108 (S1)
+                    </td>
+                    <td>Doing Sociology
+
+                    </td>
+                    <td>4.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        AB
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+                <tr style="">
+                    <td>MA 105 (D3)
+                    </td>
+                    <td>Calculus
+
+                    </td>
+                    <td>8.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        BC
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+                <tr style="">
+                    <td>NOCS01
+
+                    </td>
+                    <td>NCC/NSS/NSO
+
+                    </td>
+                    <td>0.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        PP
+
+                    </td>
+                    <td>N</td>
+                </tr>
+
+                <tr style="">
+                    <td>PH 117 (P14)
+                    </td>
+                    <td>Physics Lab
+
+                    </td>
+                    <td>3.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        AB
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+                <tr style="">
+                    <td>SOM101 (S2)
+                    </td>
+                    <td>Introduction to Management
+
+                    </td>
+                    <td>4.0</td>
+                    <td>Core course</td>
+                    <td align=center>
+
+                        CC
+
+                    </td>
+                    <td>C</td>
+                </tr>
+
+            </table>
+
+        </table>
+
+
+
+    </div>
+    <div id=tabs-1>
+
+
+        <li>
+            <a href="/asc/NE?E">Provide Personal Information </a>
+        </li>
+
+
+
+        <li><a href="/asc/JSP/docverify/docVerification.jsp">Document Verification</a></li>
+
+
+
+        </li>
+
+    </div>
+    <div id=tabs-2>
+
+
+        <link href="/asc/css/base.css" rel="stylesheet" type="text/css" media="screen" />
+        <script>
+            var emailValue = '23B3024@iitb.ac.in';
+        </script>
+
+        <script type="text/javascript" src="/asc//js/feedbackS.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                Feedback({
+                    h2cPath: "/asc//js/html2canvas.js"
+                });
+            });
+        </script>
+
+        <style>
+            #tabs-2 ul li {
+                display: list-item;
+                *display: inline;
+                list-style-type: disc;
+                font-family: Verdana;
+                font-size: 14px;
+                padding: 0
+            }
+
+            #tabs-2 ul {
+                font-family: Verdana;
+                font-size: 14px;
+                padding: 0
+            }
+
+            #tabs-2 ul li.noc {
+                list-style-type: none;
+                display: none;
+            }
+        </style>
+
+
+
+
+        <ul>
+            <li><a href="/asc/JSP/onlinepay/NoDues.jsp">Check <b>No Dues</b> Status</a> </li>
+        </ul>
+
+
+        <ul>
+            <li><a href="/asc/JSP/convo/Convo.jsp">Convocation Fee
+		</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <font color=red>Only FINAL Year Students have to pay it.</font>
+            </li>
+        </ul>
+
+
+
+
+        <ul>
+            <li><a href="/asc/canara/R.jsp">
+							View/update bank account details</font>
+							</a></li>
+        </ul>
+
+        <ul style="padding-left:0px">
+
+            <li style="display:table">Semester Fee Dues <br/>
+
+
+                <table align="left" cellpadding="4" border=1>
+                    <tr>
+                        <td colspan=6>Semester fee details from year 2023</td>
+                    </tr>
+                    <tr>
+                        <td class=thead>Academic Year -Semester</td>
+                        <td class=thead>Mode of Payment</td>
+                        <td class=thead>Amount</td>
+                        <td class=thead>Receipt Date</td>
+                        <td class=thead>Installment No</td>
+                        <td class=thead>HMA</td>
+                    </tr>
+
+                    <tr>
+                        <td>2023 - Autumn</td>
+                        <td>SBIIB</td>
+                        <td>102200.00</td>
+                        <td>2023-08-29</td>
+                        <td>1</td>
+
+                        <td><a href=""><a href="/asc/JSP/hma/HMAHome.jsp">View SMA Details/Pay Semester mess advance for H16</a></a>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td>2023 - Spring</td>
+                        <td>DD</td>
+                        <td>119800.00</td>
+                        <td>2023-12-21</td>
+                        <td>1</td>
+
+                        <td><a href=""><a href="/asc/JSP/hma/HMAHome.jsp">View SMA Details/Pay Semester mess advance for H16</a></a>
+                        </td>
+
+                    </tr>
+
+                </table>
+
+
+                <tr>
+                    <td>
+                        <br/>
+                        <!-- 			          			<br/> <br/> Mess advance payment will be made available soon. -->
+                        <br/> <br/><a href="/asc/JSP/hma/HMAHome.jsp">View SMA Details/Pay Semester mess advance for H16</a>
+                    </td>
+                </tr>
+
+
+            </li>
+        </ul>
+
+
+
+        <ul>
+            <li class=noc></li>
+        </ul>
+        <ul>
+            <li class=noc></li>
+        </ul>
+        <ul>
+            <li class=noc></li>
+        </ul>
+    </div>
+
+
+
+
+</div>
+
+</html>

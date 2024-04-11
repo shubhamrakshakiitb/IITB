@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIT External Portal Login</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <table border="0" width="100%" cellspacing="0" cellpadding="0" align="center">
+        <tr valign="middle">
+            <td align="center">
+                <div id="header">
+                    <table cellspacing="0" cellpadding="0" border="0" align="left" width=100% class=headertop>
+                        <tbody>
+                            <tr>
+                                <td class="top">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td class="middle">
+                                    <div class="logo"><img src="iitb_logo.gif" alt="IIT Bombay Logo" /></div>
+                                </td>
+                            </tr>
+
+
+
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+     <hr> <br>
+
+     <div align="center">
+        <form class="form-3" name="LoginForm" action="Login" method="POST">
+            <input name=username id=username value="" type=hidden>
+            <input name=password id=password value="" type=hidden>
+            <input name=action id=action value="login" type=hidden>
+            <div id=e style="display: none;">10001</div>
+            <div id=n style="display: none;">d4d19c674e7821b134f78bd98e199d9345805079352f4902105e1c9538df115b6f528140212ded06a90e7ce1e00367d13cf6a397862d0aa4544a2be36797a0b7</div>
+            <div id=md style="display: none;">131</div>
+            <div>
+
+                <label for="logininfo">
+			  	 <hr>
+			  	</label>
+
+                <label for="logininfo">LDAP Login <br><br>	</label>
+                <section class="main">
+
+
+                    <p class="clearfix">
+                        <label for="login">LDAP user</label>
+                        <input type="text" id="login_user" placeholder="LDAP username">
+                    </p>
+
+                    <p class="clearfix">
+                        <label for="login">Password</label>
+                        <input type="password" id="login_password" placeholder="Password">
+                        <button class="btn"><a href="/asc/Login.html">Login</a></button>
+                    </p>
+
+                </section>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
